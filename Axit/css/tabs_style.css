@@ -42,7 +42,7 @@ padding: 10px 70px 10px 83px;
 
 .section_tabs__table_box {
     border: 1px solid #C6CBCD;
-    margin-bottom: -1px;
+
 }
 
 .section_tabs__table__text_box {
@@ -50,11 +50,12 @@ padding: 10px 70px 10px 83px;
     max-width: 570px;
     margin: 0 25px 0 99px;
     vertical-align: top;
- }
+   }
 
 .section_tabs__img_box {
     display: inline-block;
     overflow: hidden;
+    margin-bottom: -4px;
 }
 
 .section_tabs__img_box img {
