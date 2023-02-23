@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/tabs_style.css">
-    <link rel="stylesheet" href="css/awesome_style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Axit</title>
 </head>
 
 <body>
     <settion class="section_tabs">
-        <div class="section_tabs__container">
+        <div class="wrapper">
             <div class="section_tabs__table-name__box">
                 <div class="section_tabs__table-name active_table">tab 1</div>
                 <div class="section_tabs__table-name">tab 2</div>
@@ -35,35 +34,26 @@
                     </div>
                     <a href="#" class="section_tabs__table-btn">Download</a>
                 </div>
-                <div class="section_tabs__img_box">           
-                        <img src="images/section_tabs_img.jpg" alt="photo">
-                    
+                <div class="section_tabs__img_box">
+                    <img src="images/section_tabs_img.jpg" alt="photo">
+
                 </div>
             </div>
         </div>
     </settion>
 
     <section class="section_awesome">
-        <div class="section_awesome__container">
+        <div class="wrapper">
             <h2 class="section__title">
                 WHY THIS IS AWESOME
             </h2>
-            <div class="section_awesome__line"></div>
+            <div class="section__line"></div>
             <p class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="section_awesome__list">
                 <div class="section_awesome__item">
                     <div class="section_awesome__item-img-box"> <img class="section_awesome__item-img"
-                            src="images/awesome_img1.jpg" alt="bulb"> </div>
+                            src="images/awesome_img1.svg" alt="bulb"> </div>
 
-                    <h4 class="section_awesome__item-title">Thoughtful Design</h4>
-                    <p class="section_awesome__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing <br>
-                        elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
-                    </p>
-                </div>
-
-                <div class="section_awesome__item">
-                    <div class="section_awesome__item-img-box"> <img class="section_awesome__item-img"
-                            src="images/awesome_img2.jpg" alt="keyboard"> </div>
                     <h4 class="section_awesome__item-title">Thoughtful Design</h4>
                     <p class="section_awesome__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
@@ -72,7 +62,16 @@
 
                 <div class="section_awesome__item">
                     <div class="section_awesome__item-img-box"> <img class="section_awesome__item-img"
-                            src="images/awesome_img3.jpg" alt="lightning"> </div>
+                            src="images/awesome_img2.svg" alt="keyboard"> </div>
+                    <h4 class="section_awesome__item-title">Thoughtful Design</h4>
+                    <p class="section_awesome__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+                    </p>
+                </div>
+
+                <div class="section_awesome__item">
+                    <div class="section_awesome__item-img-box"> <img class="section_awesome__item-img"
+                            src="images/awesome_img3.svg" alt="lightning"> </div>
                     <h4 class="section_awesome__item-title">Thoughtful Design</h4>
                     <p class="section_awesome__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
@@ -83,6 +82,53 @@
 
         </div>
 
+    </section>
+
+    <section class="section_pricing">
+        <div class="wrapper">
+            <h2 class="section__title"> pricing options</h2>
+            <div class="section__line"></div>
+            <p class="section__subtitle"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+
+            <div class="section_pricing__content">
+                <ul class="section_pricing_list section_pricing_list-no-shadow">
+                    <li class="section_pricing__item section_pricing__black-item">Basic</li>
+                    <li class="section_pricing__item section_pricing__black-item section_pricing__black-item">$10</li>
+                    <li class="section_pricing__item section_pricing__black-item section_pricing_list__little-text">Free for life</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                </ul>
+                <ul class="section_pricing_list section_pricing_list-shadow">
+                    <li class="section_pricing__item section_pricing__black-item">Optima</li>
+                    <li class="section_pricing__item section_pricing__black-item section_pricing__black-item">$20</li>
+                    <li class="section_pricing__item section_pricing__black-item section_pricing_list__little-text">Free for life</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                </ul>
+                <ul class="section_pricing_list section_pricing_list-no-shadow">
+                    <li class="section_pricing__item section_pricing__black-item">Pro</li>
+                    <li class="section_pricing__item section_pricing__black-item section_pricing__black-item">$30</li>
+                    <li class="section_pricing__item section_pricing__black-item section_pricing_list__little-text">Free for life</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                    <li class="section_pricing__item">1 gb of space</li>
+                </ul>
+
+
+            </div>
+
+        </div>
     </section>
 
 </body>
