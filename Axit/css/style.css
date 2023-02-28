@@ -279,7 +279,13 @@ a {
 }
 
 .section_customers__review-peron__img {
-    display: block;padding-right: 30px;
+    display: block;
+    max-width:70px;
+    border-radius: 50%;
+}
+
+.section_customers__review-person-info {
+    padding-left: 50px;
 }
 
 .section_customers__review-person-name {
