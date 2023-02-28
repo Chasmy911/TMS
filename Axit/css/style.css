@@ -19,6 +19,8 @@ a {
     margin: 0 auto;
 }
 
+/* section_tabs */
+
 
 .section_tabs__table-name__box {
     padding-top: 100px;
@@ -97,6 +99,9 @@ a {
     color: #FFFFFF;
 }
 
+
+/* section_awesome*/
+
 .section_awesome {
     padding-bottom: 60px;
 }
@@ -127,7 +132,7 @@ a {
     line-height: 21px;
     text-align: center;
     color: #86878B;
-    padding: 40px 0 110px 0;
+    padding: 40px 0 80px 0;
 }
 
 .section_awesome__list {
@@ -141,34 +146,36 @@ a {
 }
 
 .section_awesome__item-img-box {
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #EC7979;
     border-radius: 50%;
     height: 92px;
     width: 92px;
     margin: 0 auto;
-    
-    }
+
+}
 
 
 .section_awesome__item-title {
-font-family: 'Open Sans', sans-serif;
-font-weight: 700;
-font-size: 24px;
-line-height: 33px;
-margin: 40px 0 33px 0;
-text-transform: capitalize;
-color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    margin: 40px 0 33px 0;
+    text-transform: capitalize;
+    color: #000000;
 }
 
 .section_awesome__item-text {
-font-family: 'Raleway', sans-serif;
-font-size: 18px;
-line-height: 21px;
-color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
 }
+
+/* section_pricing */
 
 .section_pricing {
     background-color: #F5F5F5;
@@ -183,8 +190,8 @@ color: #000000;
 .section_pricing_list-shadow {
     outline: 2px solid #F5F5F5;
     filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
-    
-   
+
+
 }
 
 .section_pricing_list-no-shadow {
@@ -194,45 +201,100 @@ color: #000000;
 
 
 .section_pricing_list {
-     width: 31.624%;
-     text-align: center;
-   }
+    width: 31.624%;
+    text-align: center;
+}
 
 .section_pricing__item {
 
-font-family: 'Raleway', sans-serif;
-font-size: 18px;
-line-height: 21px;
-text-transform: capitalize;
-color: #86878B;
-padding: 15px 0;
-border-bottom: 2px solid #F5F5F5;
-background-color: #fff;
-border-collapse: collapse;
-text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #86878B;
+    padding: 15px 0;
+    border-bottom: 2px solid #F5F5F5;
+    background-color: #fff;
+    border-collapse: collapse;
+    text-align: center;
 }
 
 .section_pricing__black-item {
     font-family: 'Open Sans', sans-serif;
-font-weight: 700;
-font-size: 24px;
-line-height: 33px;
-text-transform: capitalize;
-color: #FFFFFF;
-background-color: #333333;
-border-color:#F5F5F5;
-text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background-color: #333333;
+    border-color: #F5F5F5;
+    text-align: center;
 }
 
 
 
 .section_pricing_list__little-text {
     font-family: 'Raleway', sans-serif;
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* section_customs*/
+
+.section_customers {
+    padding-bottom: 65px;
+}
+
+.section_customers__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
 }
 
 
+.section_customers__review-box {
+    width: 31.624%;
+}
 
+
+.section_customers__review-person {
+    display: flex;
+    align-items: start;
+    padding-top: 65px;
+   
+}
+
+.section_customers__review {
+    background: #E2E2E2;
+    color: #86878B;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    padding: 37px 15px;
+}
+
+.section_customers__review-peron__img {
+    display: block;padding-right: 30px;
+}
+
+.section_customers__review-person-name {
+        font-family: 'Open Sans', sans-serif;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+text-transform: capitalize;
+color: #000000;
+padding-bottom: 30px;
+}
+
+.section_customers__review-person-job {
+    font-family: 'Raleway', sans-serif;
+font-size: 18px;
+line-height: 21px;
+color: #000000;
+}
