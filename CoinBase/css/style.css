@@ -120,8 +120,8 @@
     position: absolute;
     content: "";
     border: 25px solid transparent;
-    border-right: 35px solid #FFFFFF;
-    left: -56px;
+    border-right: 25px solid #FFFFFF;
+    left: -47px;
     top: 45px;
 
 }
@@ -155,6 +155,7 @@
     position: relative;
     color: #D8D8D8;
     min-height: 400px;
+  
 }
 
 .testimonial__bubbles-container:after {
@@ -197,6 +198,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap:30px;
 }
 
 .circle_2 {
@@ -234,7 +236,7 @@
 
 .bubble_3 {
     top: 207px;
-    right: 168px;
+    right: 108px;
 }
 
 .bubble_4 {
@@ -296,6 +298,7 @@ z-index: 100;
 .fa-circle {
     position: relative;
     z-index: 15;
+  
 }
 
 
