@@ -183,15 +183,21 @@ a {
     color: #EC7979;
 }
 
-.banner-form input,
-.contact__input-box input {
+.banner-form input {
     width: 80%;
     margin-left: 45px;
-    padding: 40px 0 10px 5px;
     border: none;
     border-bottom: 1px solid #BDBDBD;
+       padding-left: 5px;
+    margin-bottom: 15px;
+    
 
 }
+
+.banner-form input:focus {
+    padding: 15px;
+}
+
 
 .banner-form__btn {
     background: #EC7979;
@@ -217,6 +223,20 @@ a {
     line-height: 20px;
     color: #FFFFFF;
 }
+
+
+.form__label-box label {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 0 40px;
+    padding-top: 25px;
+    color: #BDBDBD;
+}
+
+
+
 
 
 /* media */
@@ -645,14 +665,20 @@ a {
 .contact__textarea textarea {
     border: none;
     border-bottom: 1px solid #BDBDBD;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-left: 15px;
+    resize: none;
+    width: 570px;
+    height: 200px;
 }
+
+.contact__textarea textarea::placeholder,
+.contact__input-box input::placeholder {
+    color: #BDBDBD;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
 
 .contact__btn {
     margin: 50px auto;
@@ -668,6 +694,16 @@ a {
     text-transform: capitalize;
     text-align: center;
     color: #FFFFFF;
+}
+
+.contact__input-box input {
+    width: 80%;
+    margin-left: 45px;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    padding-left: 5px;
+    margin-bottom: 15px;
+    padding: 20px 0 20px 5px;
 }
 
 .footer {

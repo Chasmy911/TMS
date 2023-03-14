@@ -47,11 +47,19 @@
                     <form action="#" class="banner-form">
                         <h4 class="banner-form__title">Try Your <span class="orange-title">FREE</span> Trial Today
                         </h4>
-                        <input type="text" class="banner-form__name" placeholder="Name" name="name">
-                        <input type="email" class="banner-form__name" placeholder=" Email" name="email">
-                        <input type="password" class="banner-form__name" placeholder=" Password" name="password">
-
-                        <button class="banner-form__btn"><a href="#">Get Started</a></button>
+                        <div class="form__label-box">
+                            <label for="bannerName">Name</label>
+                            <input type="text" class="banner__name" name="name" id="bannerName" required>
+                        </div>
+                        <div class="form__label-box">
+                            <label for="bannerEmail">Email</label>
+                            <input type="email" class="banner__email" name="email" id="bannerEmail" required>
+                        </div>
+                        <div class="form__label-box">
+                            <label for="bannerPassword">Password</label>
+                            <input type="password" class="banner__password" name="password" id="bannerPassword" required>
+                        </div>
+                        <button type="submit" class="banner-form__btn"><a href="#">Get Started</a></button>
                     </form>
                 </div>
             </div>
@@ -284,12 +292,12 @@
                     </div>
                     <div class="contact__textarea-box">
                         <div class="contact__textarea">
-                            <textarea name="message" id="message" cols="70" rows="9" placeholder="Message"></textarea>
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
                         </div>
                     </div>
 
                 </div>
-                <button class="contact__btn">Send Message</button>
+                <button type="submit" class="contact__btn">Send Message</button>
 
             </form>
 
