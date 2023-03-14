@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hobby</title>
+</head>
+
+<body>
+
+    <section class="basket">
+        <div class="wrapper">
+            <form action="#"></form>
+            <h3 class="basket__title">Способ получения</h3>
+            <input type="text" class="basket-form__city" name="city" placeholder="Город" required>
+            <select class="basket__select">
+                <option>Почта России</option>
+                <option>DPD</option>
+                <option>Курьерская доставка</option>
+            </select>
+            <input type="text" class="basket-form__street" name="street" placeholder="Улица" required>
+            <input type="text" class="basket-form__home" name="home" placeholder="Дом" required>
+            <input type="text" class="basket-form__flat" name="flat" placeholder="Квартира" required>
+            <input type="text" class="basket-form__indeks" minlength="6" name="indeks" placeholder="Индекс" required>
+            <input type="text" class="basket-form__comment" name="comment" placeholder="Добавить комментарий" required>
+
+            <h3 class="basket__title"> Данные получателя</h3>
+            <input type="text" class="basket-form__surname" name="surname" placeholder="Фамилия" required>
+            <input type="text" class="basket-form__name" name="name" placeholder="Имя" required>
+            <input type="text" class="basket-form__sec_name" name="sec_name" placeholder="Отчество" required>
+            <input type="tel" class="basket-form__phone" name="phone" placeholder="Номер телефона" required>
+            <p class="form__text">По этому номеру телефона мы с вяжемся с вами для подтверждения заказа</p>
+            <input type="email" name="email" class="basket-form__email" placeholder="E-mail" required>
+            <p class="form__text">На эту почту вам придет письмо с составом заказа, а так же трэк-номер для его
+                отслеживания</p>
+            <input type="checkbox" id="check_form"> <label for="check_form" class="check_form__label">Подписаться на рассылку новинок и
+                акций</label>
+            <h3 class="basket__title">Способ оплаты</h3>
+            <div class="basket__radio-box">
+                <input type="radio" name="input_radio" class="basket__input-radio" id="pay_card" checked> <label
+                    for="pay_card" class="label_radio">Оплата при получении наличными
+                    или картой</label>
+            </div>
+            <div class="basket__radio-box">
+                <input type="radio" name="input_radio" class="basket__input-radio" id="pay_cash"> <label for="pay_cash" class="label_radio">Оплата банковской картой
+                    онлайн</label>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>
