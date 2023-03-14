@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>ArtBox</title>
+</head>
+
+<body>
+
+    <section class="testimonials">
+        <div class="wrapper">
+            <div class="testimonials__title-box">
+                <div class="title_box__item">Описание</div>
+                <div class="title_box__item">Детали</div>
+                <div class="title_box__item title_box__item--active">Отзывы</div>
+            </div>
+            <p class="testimonials__subtitle">
+                Оставьте свой отзыв на “Ароматическое саше”
+            </p>
+
+            <form action="#" class="testimonials__form">
+                <textarea name="testimonial" id="testimTextarea" placeholder="Ваш отзыв*"
+                    class="testimonials__form-textarea"></textarea>
+                <div class="testimonials__input-box">
+                    <input type="text" class="testimonials__input" name="testimonialName" placeholder="Имя*" required>
+                    <input type="tel" class="testimonials__input" name="testimonialTel" placeholder="Телефон*" required>
+                    <input type="email" class="testimonials__input" name="testimonialEmail" placeholder="Email"
+                        required>
+                </div>
+                <button class="testimonials__btn" type="submit">Отправить</button>
+                <input type="checkbox" id="testimonialsCheck"> <label for="testimonialsCheck"
+                    class="testim_label_check"> <i class="fa-solid fa-check checkbox_i"></i>Сохранить моё имя, email и
+                    адрес сайта в этом браузере для последующих моих комментариев.</label>
+            </form>
+        </div>
+    </section>
+
+    <section class="apply">
+        <div class="wrapper-2">
+            <div class="content">
+                <form action="#">
+                    <h3 class="apply_form__title">Не нашли что искали? Оставьте заявку и мы разработаем программу
+                        специально для вас!</h3>
+                    <input type="text" class="apply_input" name="applyName" placeholder="Имя*" required>
+                    <input type="tel" class="apply_input" name="applyTel" placeholder="Телефон*" required>
+                    <input type="email" class="apply_input" name="applyEmail" placeholder="Email" required>
+                    <input type="text" class="apply_input" name="applyKomment" placeholder="Комментарий" required>
+                    <button class="testimonials__btn apply_btn" type="submit">Отправить</button> 
+                </form>
+                <img src="assets/images/Flovers.png" alt="flovers">
+            </div>
+        </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
