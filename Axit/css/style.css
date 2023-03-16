@@ -80,13 +80,14 @@ button {
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
+
 }
 
 
 .banner {
     background: url('../images/banner_bg.jpg') no-repeat center;
     position: relative;
-
+    z-index: -1;
 }
 
 
@@ -646,7 +647,7 @@ input:not(:placeholder-shown)~.banner_label {
     position: relative;
     background: url('../images/design_bg.jpg');
     padding-bottom: 50px;
-background-size: 100%;
+    background-size: 100%;
 }
 
 .design:after {
@@ -1120,44 +1121,73 @@ background-size: 100%;
 }
 
 @media (max-width:744px) {
+
+    .heaader {
+        position: fixed;
+        width: 100%;
+        z-index: 11;
+    }
     .heaer__content {
         padding-left: 20px;
     }
-
+.burger__btn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
     .burger_span {
+        width: 24px;
+        height: 3px;
+        background: #FFFFFF;
+        margin-top: 6px;
+        z-index: 999;
+    }
+
+
+    .burger__btn.active .burger_span:nth-child(2)  {
+        opacity:0;
+
+    }
+
+    .burger__btn.active .burger_span:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+        opacity:1;
+    }
+
+    .burger__btn.active .burger_span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    opacity:1;
+}
+
+*/
+    .header_nav {
         position: relative;
-        display: block;
-        width: 24px;
-        height: 3px;
-        background: #FFFFFF;
-        margin: 30px 50px 0 0;
-    }
 
-    .burger_span:before {
-        position: absolute;
-        content: "";
-        display: inline-block;
-        width: 24px;
-        height: 3px;
-        top: 7px;
-        left: 0;
-        background: #FFFFFF;
-
-    }
-
-    .burger_span:after {
-        position: absolute;
-        content: "";
-        display: inline-block;
-        width: 24px;
-        height: 3px;
-        top: -7px;
-        left: 0;
-        background: #FFFFFF;
     }
 
     .header_nav__list {
-        display: none;
+        position: fixed;
+        flex-direction: column;
+        border-color: #000;
+        margin-top: 60px;
+        width: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        z-index: 11;
+        height: 100%;
+        transform: translate(100%);
+
+
+    }
+
+    .header_nav__list--active {
+        transform: translate(0);
+    }
+
+    .header_nav__item {
+        padding: 35px 22px 35px;
     }
 
     .banner__logo {
@@ -1293,41 +1323,41 @@ background-size: 100%;
 
 @media (max-width:640px) {
 
-.section_customers__dot {
-width: 10px;
-height: 10px;
-border-radius: 50%;
-border: 1px solid #86878B;
-}
+    .section_customers__dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #86878B;
+    }
 
-.section_customers__dot--active {
-    background-color: #86878B;
-}
+    .section_customers__dot--active {
+        background-color: #86878B;
+    }
 
-.section_customers__dot-box {
-    display: flex;
-    justify-content: space-between;
-    max-width: 25%;
-    margin: 30px auto 0;
-}
+    .section_customers__dot-box {
+        display: flex;
+        justify-content: space-between;
+        max-width: 25%;
+        margin: 30px auto 0;
+    }
 
-.section_customers__content {
-    justify-content: center;
-}
+    .section_customers__content {
+        justify-content: center;
+    }
 
-.section_customers__review-box {
-    display: none;
-}
+    .section_customers__review-box {
+        display: none;
+    }
 
-.section_customers__review-box--active {
-    display: block;
-    justify-content: center;
-    width: 100%;
-}
+    .section_customers__review-box--active {
+        display: block;
+        justify-content: center;
+        width: 100%;
+    }
 
-.design__subtitle {
-    padding-bottom: 35px;
-}
+    .design__subtitle {
+        padding-bottom: 35px;
+    }
 
 }
 
@@ -1354,7 +1384,7 @@ border: 1px solid #86878B;
 
     .design__title {
         max-width: 295px;
-       margin: 0 auto;
+        margin: 0 auto;
     }
 
     .media__social-container {
@@ -1378,11 +1408,11 @@ border: 1px solid #86878B;
     }
 
     .design {
-       
-        background: url('../images/design_bg_784.jpg') no-repeat ;
+
+        background: url('../images/design_bg_784.jpg') no-repeat;
         background-size: 100%;
         background-position-y: top;
-    
+
     }
 
 
