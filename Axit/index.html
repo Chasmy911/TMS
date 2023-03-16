@@ -20,6 +20,7 @@
                     <img src="images/logo.svg" alt="logo">
                 </div>
                 <nav class="header_nav">
+                    <span class="burger_span"></span>
                     <ul class="header_nav__list">
                         <li class="header_nav__item"> <a href="#features" class="header_nav__item-link">Features </a>
                         </li>
@@ -48,16 +49,22 @@
                         <h4 class="banner-form__title">Try Your <span class="orange-title">FREE</span> Trial Today
                         </h4>
                         <div class="form__label-box">
-                            <label for="bannerName">Name</label>
-                            <input type="text" class="banner__name" name="name" id="bannerName" required>
+                            <input type="text" class="banner__name" name="name" id="bannerName" placeholder=" "
+                                required>
+                            <label for="bannerName" class="banner_label">Name</label>
+
                         </div>
                         <div class="form__label-box">
-                            <label for="bannerEmail">Email</label>
-                            <input type="email" class="banner__email" name="email" id="bannerEmail" required>
+
+                            <input type="email" class="banner__email" name="email" id="bannerEmail" placeholder=" "
+                                required>
+                            <label for="bannerEmail" class="banner_label">Email</label>
                         </div>
                         <div class="form__label-box">
-                            <label for="bannerPassword">Password</label>
-                            <input type="password" class="banner__password" name="password" id="bannerPassword" required>
+
+                            <input type="password" class="banner__password" name="password" placeholder=" "
+                                id="bannerPassword" required>
+                            <label for="bannerPassword" class="banner_label">Password</label>
                         </div>
                         <button type="submit" class="banner-form__btn"><a href="#">Get Started</a></button>
                     </form>
@@ -103,8 +110,8 @@
                         <p> bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra</p>
                         <p>justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
                             penatibus et magnis dis parturient montes.</p>
-                        </p>
-                        <p class="section_tabs__table-text_p">
+                        </p> <br>
+                        <p class="section_tabs__table-text_p section_tabs__table-text_p--lorem">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                         <p>bibendum laoreet. </p>
                         </p>
@@ -113,7 +120,6 @@
                 </div>
                 <div class="section_tabs__img_box">
                     <img src="images/section_tabs_img.jpg" alt="photo">
-
                 </div>
             </div>
         </div>
@@ -131,7 +137,7 @@
                             src="images/awesome_img1.svg" alt="bulb"> </div>
 
                     <h4 class="section_awesome__item-title">Thoughtful Design</h4>
-                    <p class="section_awesome__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <p class="section_awesome__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing <br>
                         elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
                     </p>
                 </div>
@@ -140,7 +146,7 @@
                     <div class="section_awesome__item-img-box"> <img class="section_awesome__item-img"
                             src="images/awesome_img2.svg" alt="keyboard"> </div>
                     <h4 class="section_awesome__item-title">Thoughtful Design</h4>
-                    <p class="section_awesome__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <p class="section_awesome__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing<br>
                         elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
                     </p>
                 </div>
@@ -149,7 +155,7 @@
                     <div class="section_awesome__item-img-box"> <img class="section_awesome__item-img"
                             src="images/awesome_img3.svg" alt="lightning"> </div>
                     <h4 class="section_awesome__item-title">Thoughtful Design</h4>
-                    <p class="section_awesome__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <p class="section_awesome__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing<br>
                         elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
                     </p>
                 </div>
@@ -233,7 +239,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section_customers__review-box">
+                <div class="section_customers__review-box section_customers__review-box--active">
 
                     <p class="section_customers__review"> Lorem ipsum dolor sit amet,
                         consectetur adipisicing elit. Doloribus
@@ -263,7 +269,15 @@
                         </div>
                     </div>
                 </div>
+
             </div>
+            <div class="section_customers__dot-box">
+                <div class="section_customers__dot"></div>
+                <div class="section_customers__dot section_customers__dot--active"></div>
+                <div class="section_customers__dot"></div>
+
+            </div>
+        </div>
 
     </section>
 
@@ -286,9 +300,22 @@
             <form action="#">
                 <div class='contact__form-container'>
                     <div class="contact__input-box">
-                        <input type="text" class="banner-form__name" placeholder="Name" name="name_cont">
-                        <input type="email" class="banner-form__name" placeholder=" Email" name="email_cont">
-                        <input type="password" class="banner-form__name" placeholder=" Password" name="password_cont">
+                        <div class="contact__label-box">
+                            <label for="contact__name"></label>
+                            <input type="text" class="banner-form__name" id="contact__name" placeholder="Name"
+                                name="name_cont">
+                        </div>
+                        <div class="contact__label-box"> <label for="contact__mail">
+
+                            </label>
+                            <input type="email" class="banner-form__name" id="contact__mail" placeholder=" Email"
+                                name="email_cont">
+                        </div>
+                        <div class="contact__label-box">
+                            <label for="contact__password"></label>
+                            <input type="password" class="banner-form__name" id="contact__password"
+                                placeholder=" Password" name="password_cont">
+                        </div>
                     </div>
                     <div class="contact__textarea-box">
                         <div class="contact__textarea">
