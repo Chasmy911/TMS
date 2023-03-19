@@ -85,8 +85,8 @@ button {
 
 
 .banner {
-    background: url('../images/banner_bg.jpg') no-repeat center;
-    position: relative;
+    background: url('../images/banner_bg.jpg') no-repeat center/cover;
+     position: relative;
     z-index: 0;
 }
 
@@ -1045,6 +1045,11 @@ input:not(:placeholder-shown)~.banner_label {
 }
 
 @media (max-width:890px) {
+
+    .banner {
+        background: url('../images/banner_bg.jpg') no-repeat center;
+    
+    }
 
     .header_nav__item {
         padding: 25px 22px 28px;
