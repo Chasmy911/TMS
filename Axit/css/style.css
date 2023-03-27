@@ -20,13 +20,13 @@ button {
 }
 
 
-
 .wrapper {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 /*header*/
@@ -86,7 +86,7 @@ button {
 
 .banner {
     background: url('../images/banner_bg.jpg') no-repeat center/cover;
-     position: relative;
+    position: relative;
     z-index: 0;
 }
 
@@ -769,6 +769,22 @@ input:not(:placeholder-shown)~.banner_label {
 
 }
 
+.swiper-pagination {
+    position:absolute;
+   bottom: -4px !important;
+
+}
+
+.swiper-pagination-bullet {
+    margin-top: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #86878B;
+    background: #86878B;
+    transition: 0s;
+}
+
 
 
 
@@ -1022,7 +1038,7 @@ input:not(:placeholder-shown)~.banner_label {
 
     }
 
- 
+
 
     .contact__btn {
         width: 318px;
@@ -1048,7 +1064,7 @@ input:not(:placeholder-shown)~.banner_label {
 
     .banner {
         background: url('../images/banner_bg.jpg') no-repeat center;
-    
+
     }
 
     .header_nav__item {
@@ -1354,18 +1370,16 @@ input:not(:placeholder-shown)~.banner_label {
     }
 
     .section_customers__content {
-        justify-content: center;
+        min-width: 0;
+      
     }
+
 
     .section_customers__review-box {
-        display: none;
+        width: 100%;
+
     }
 
-    .section_customers__review-box--active {
-        display: block;
-        justify-content: center;
-        width: 100%;
-    }
 
     .design__subtitle {
         padding-bottom: 35px;
@@ -1422,5 +1436,4 @@ input:not(:placeholder-shown)~.banner_label {
     }
 
 
-    /*сделать табс*/
 }
