@@ -1,0 +1,138 @@
+.footer {
+    background-color: $blue;
+    color: $white;
+    padding: 71px 0 0 0;
+
+    @media (max-width: 1024px) {
+        padding: 45px 0 0 0;
+    }
+}
+
+.footer__contacts {
+    display: flex;
+    gap: 30px;
+
+    @media (max-width: 1024px) {
+        gap: 20px;
+    }
+
+    @media (max-width: 620px) {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &-location {
+        width: 33%;
+
+        @media (max-width: 620px) {
+            width: 100%;
+        }
+
+    }
+
+    &-social {
+        width: 33%;
+
+        @media (max-width: 620px) {
+            width: 100%;
+        }
+    }
+
+    &-about {
+        width: 33%;
+
+        @media (max-width: 620px) {
+            width: 100%;
+        }
+    }
+}
+
+
+.footer__contacts-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+
+    @media (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+.footer__text {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 67px;
+
+    @media (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 16px;
+        padding-bottom: 41px;
+    }
+
+    @media (max-width: 621px) {
+        padding-bottom: 33px;
+    }
+}
+
+.footer__social-box {
+    display: flex;
+    gap: 27px;
+    justify-content: center;
+
+    @media (max-width: 1024px) {
+        gap: 22px;
+    }
+
+
+
+}
+
+.footer__design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $darkblue;
+    padding: 25px 0;
+
+    @media (max-width: 1024px) {
+        padding: 15px 0;
+    }
+
+    @media (max-width: 551px) {
+        padding: 29px 0;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+
+    .footer__copyright {
+        color: $grey;
+    }
+
+    .footer__designed {
+        color: $grey;
+
+        &-name {
+            color: $white;
+        }
+    }
+}
+
+.footer__social-item:hover img {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@media (max-width: 551px) {
+    .footer__social-box img {
+        width: 33px;
+        height: 33px;
+    }
+}
+
