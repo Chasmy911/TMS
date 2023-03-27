@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Axit</title>
 </head>
@@ -25,7 +26,7 @@
                         <span class="burger_span active"></span>
                         <span class="burger_span active"></span>
                     </div>
-                    
+
                     <ul class="header_nav__list">
                         <li class="header_nav__item"> <a href="#features" class="header_nav__item-link">Features </a>
                         </li>
@@ -227,61 +228,64 @@
         <div class="wrapper">
             <h2 class="section__title"> what our customers are saying</h2>
             <p class="section__subtitle"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <div class="swiper-container reviews_slider">
+                <div class=" swiper-wrapper section_customers__content">
+                    <div class="section_customers__review-box swiper-slide">
 
-            <div class="section_customers__content">
-                <div class="section_customers__review-box">
+                        <p class="section_customers__review"> Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Doloribus
+                            accusamus expedita repellat similique
+                            odio aspernatur ex, architecto eaque
+                            quo suscipit.</p>
+                        <div class="section_customers__review-person">
+                            <img src="images/1.jpg" alt="photo" class="section_customers__review-peron__img">
+                            <div class="section_customers__review-person-info">
+                                <h4 class="section_customers__review-person-name">Davis Rhiel Madsen</h4>
+                                <div class="section_customers__review-person-job">Manager</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_customers__review-box swiper-slide">
 
-                    <p class="section_customers__review"> Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Doloribus
-                        accusamus expedita repellat similique
-                        odio aspernatur ex, architecto eaque
-                        quo suscipit.</p>
-                    <div class="section_customers__review-person">
-                        <img src="images/1.jpg" alt="photo" class="section_customers__review-peron__img">
-                        <div class="section_customers__review-person-info">
-                            <h4 class="section_customers__review-person-name">Davis Rhiel Madsen</h4>
-                            <div class="section_customers__review-person-job">Manager</div>
+                        <p class="section_customers__review"> Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Doloribus
+                            accusamus expedita repellat similique
+                            odio aspernatur ex, architecto eaque
+                            quo suscipit.</p>
+                        <div class="section_customers__review-person">
+                            <img src="images/2.jpg" alt="photo" class="section_customers__review-peron__img">
+                            <div class="section_customers__review-person-info">
+                                <h4 class="section_customers__review-person-name">Jaydon Rosser</h4>
+                                <div class="section_customers__review-person-job">Manager</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_customers__review-box swiper-slide">
+
+                        <p class="section_customers__review"> Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Doloribus
+                            accusamus expedita repellat similique
+                            odio aspernatur ex, architecto eaque
+                            quo suscipit.</p>
+                        <div class="section_customers__review-person">
+                            <img src="images/3.jpg" alt="photo" class="section_customers__review-peron__img">
+                            <div class="section_customers__review-person-info">
+                                <h4 class="section_customers__review-person-name">Cooper Dorwart </h4>
+                                <div class="section_customers__review-person-job">Manager</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="section_customers__review-box section_customers__review-box--active">
-
-                    <p class="section_customers__review"> Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Doloribus
-                        accusamus expedita repellat similique
-                        odio aspernatur ex, architecto eaque
-                        quo suscipit.</p>
-                    <div class="section_customers__review-person">
-                        <img src="images/2.jpg" alt="photo" class="section_customers__review-peron__img">
-                        <div class="section_customers__review-person-info">
-                            <h4 class="section_customers__review-person-name">Jaydon Rosser</h4>
-                            <div class="section_customers__review-person-job">Manager</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section_customers__review-box">
-
-                    <p class="section_customers__review"> Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Doloribus
-                        accusamus expedita repellat similique
-                        odio aspernatur ex, architecto eaque
-                        quo suscipit.</p>
-                    <div class="section_customers__review-person">
-                        <img src="images/3.jpg" alt="photo" class="section_customers__review-peron__img">
-                        <div class="section_customers__review-person-info">
-                            <h4 class="section_customers__review-person-name">Cooper Dorwart </h4>
-                            <div class="section_customers__review-person-job">Manager</div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+
+            <div class="swiper-pagination"></div>
+            <!--
             <div class="section_customers__dot-box">
                 <div class="section_customers__dot"></div>
                 <div class="section_customers__dot section_customers__dot--active"></div>
                 <div class="section_customers__dot"></div>
 
-            </div>
+            </div>-->
         </div>
 
     </section>
@@ -352,7 +356,9 @@
             <div class="footer__design">© 2015 Axure Themes</div>
         </div>
     </footer>
-<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    
 </body>
 
 </html>

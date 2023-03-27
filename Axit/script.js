@@ -9,11 +9,38 @@ burgerBtn.addEventListener("click", () => {
 })
 
 
-for(let i=0; i<burgerItem.length; i++) {
-burgerItem[i].addEventListener("click", () => {
-    burgerMenu.classList.remove('header_nav__list--active');
-    burgerBtn.classList.remove('active');
-    
-})
+for (let i = 0; i < burgerItem.length; i++) {
+    burgerItem[i].addEventListener("click", () => {
+        burgerMenu.classList.remove('header_nav__list--active');
+        burgerBtn.classList.remove('active');
+
+    })
 
 }
+
+
+new Swiper('.reviews_slider', {
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+
+    breakpoints: {
+        740: {
+            slidesPerView: 3,
+        },
+        640: {
+            slidesPerView: 1,
+
+        },
+        320: {
+            slidesPerView: 1,
+
+        },
+
+    },
+
+
+});
