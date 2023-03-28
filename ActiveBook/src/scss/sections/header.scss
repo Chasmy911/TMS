@@ -249,3 +249,7 @@
     transform: translateY(-8px) rotate(-45deg);
     opacity: 1;
 }
+
+.no-scroll {
+    overflow: hidden;
+}
