@@ -967,10 +967,10 @@ button {
 }
 
 .features__list {
-  text-align: center;
   flex-wrap: wrap;
   grid-template-columns: repeat(3, 1fr);
   gap: 87px 30px;
+  margin: 0 auto;
   display: grid;
 }
 
