@@ -105,7 +105,23 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: 1px solid $purple;
+    border: 2px solid $purple;
+    background-color: $white;
+        transition: 0s;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
     background: $purple;
-    transition: 0s;
+}
+
+
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin:  0 12.5px 0 12.5px;
+    
+    
+    @media (max-width:551px) {
+        margin:  0 10px 0 10px;
+    }
 }
