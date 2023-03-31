@@ -10,13 +10,18 @@
     }
 
     &__list {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(3, 1fr);
         gap: 87px 30px;
         flex-wrap: wrap;
 
         @media (max-width: 1024px) {
             gap: 49px 20px
+        }
+
+        @media (max-width: 840px) {
+            grid-template-columns: repeat(auto-fill, minmax(275px, auto));
         }
 
         @media (max-width: 610px) {

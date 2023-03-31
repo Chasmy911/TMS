@@ -967,15 +967,22 @@ button {
 }
 
 .features__list {
+  text-align: center;
   flex-wrap: wrap;
-  justify-content: space-around;
+  grid-template-columns: repeat(3, 1fr);
   gap: 87px 30px;
-  display: flex;
+  display: grid;
 }
 
 @media (max-width: 1024px) {
   .features__list {
     gap: 49px 20px;
+  }
+}
+
+@media (max-width: 840px) {
+  .features__list {
+    grid-template-columns: repeat(auto-fill, minmax(275px, auto));
   }
 }
 
