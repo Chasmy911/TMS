@@ -11,7 +11,8 @@
 
     &__list {
         display: grid;
-        margin: 0 auto;
+text-align: center;
+
         grid-template-columns: repeat(3, 1fr);
         gap: 87px 30px;
         flex-wrap: wrap;
@@ -32,7 +33,7 @@
 
 
 .features_item {
-    text-align: center;
+    margin: 0 auto;
     max-width: 31.6%;
     min-width: 275px;
 
