@@ -771,7 +771,8 @@ input:not(:placeholder-shown)~.banner_label {
 
 .swiper-pagination {
     position:absolute;
-   bottom: -4px !important;
+   
+   bottom: 0;
 
 }
 
@@ -783,6 +784,10 @@ input:not(:placeholder-shown)~.banner_label {
     border: 1px solid #86878B;
     background: #86878B;
     transition: 0s;
+}
+
+.swiper-container {
+    padding-bottom: 15px;
 }
 
 
@@ -1433,6 +1438,10 @@ input:not(:placeholder-shown)~.banner_label {
         background-size: 100%;
         background-position-y: top;
 
+    }
+
+    .section_customers {
+        padding-bottom: 15px;
     }
 
 
